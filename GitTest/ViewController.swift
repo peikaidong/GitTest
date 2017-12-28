@@ -8,10 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+//protocol pro {
+//    var myStr: String? {get set}
+//}
+//
+//
+//class baseViewController: UIViewController {
+//
+//
+//}
+
+
+
+class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var str = "antarctica, asia, africa"//.uppercased()
+        let mStr = str.capitalized
+        print(mStr)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +38,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        var str = "abcde"
+        str.capitalized
+    }
+    
 }
 
